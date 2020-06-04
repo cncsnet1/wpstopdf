@@ -13,7 +13,7 @@
 ##### 以下是功能代码
 ```
    var WordApp = new ActiveXObject("kwps.Application"); //  实例化一个wps对象
-   WordApp.Application.Visible=false;   //设置隐藏窗口<br>
+   WordApp.Application.Visible=false;   //设置隐藏窗口
    var Doc=WordApp.Documents.Add("c:\\tmp.doc");   //打开一个doc
    Doc.ExportAsFixedFormat("c:\\1.pdf",17);   // 导出为pdf文件
    WordApp.Quit();  //退出wps 
