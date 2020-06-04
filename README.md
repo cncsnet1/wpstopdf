@@ -11,13 +11,13 @@
 1. 使用 **COM** 组件调用 浏览器使用 **activex** 调用 WPS （目前使用 ，google不能用）
 ****
 ##### 以下是功能代码
-`
+```
    var WordApp = new ActiveXObject("kwps.Application"); //  实例化一个wps对象
-   WordApp.Application.Visible=false;   //设置隐藏窗口
+   WordApp.Application.Visible=false;   //设置隐藏窗口<br>
    var Doc=WordApp.Documents.Add("c:\\tmp.doc");   //打开一个doc
    Doc.ExportAsFixedFormat("c:\\1.pdf",17);   // 导出为pdf文件
    WordApp.Quit();  //退出wps 
-`
+```
 <br>
 **注： 必须打开Internet 选项中对Activex的支持**
 
