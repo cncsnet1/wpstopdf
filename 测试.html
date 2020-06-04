@@ -1,0 +1,28 @@
+<!document type>
+<html>
+
+<head>
+<script type="text/javascript">
+function test(){
+alert("dd");
+  var WordApp = new ActiveXObject("kwps.Application");
+   WordApp.Application.Visible=false;
+ 
+   var Doc=WordApp.Documents.Add("c:\\tmp.doc");
+   Doc.ExportAsFixedFormat("c:\\1.pdf",17);
+
+   WordApp.Quit();
+}
+
+</script>
+</head>
+<body>
+<button onclick="test()">
+
+
+
+</button>
+</body>
+
+
+</html>
